@@ -41,16 +41,16 @@ class App extends Component {
     
 }
  
-  eliminar=(p,index)=>{
+eliminar=(p,index)=>{
      
 
-    const temporal = this.state.carrito.filter((p,i)=>i!==index)
+  const temporal = this.state.carrito.filter((p,i)=>i!==index)
 
-    this.setState({
-     carrito:temporal,
-     total:this.state.total-p.precio
-   })
- }
+  this.setState({
+   carrito:temporal,
+   total:this.state.total-p.precio
+ })
+}
   
   render() {
 

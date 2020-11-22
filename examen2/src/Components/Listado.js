@@ -1,5 +1,5 @@
 import '../App.css';
-//import { Button, Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Listado = (props) => {
