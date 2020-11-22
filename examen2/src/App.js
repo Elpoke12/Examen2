@@ -24,22 +24,22 @@ class App extends Component {
   }
   
   
-  agregar=(producto)=>{
+   agregar=(producto)=>{
       
-      this.setState({
-        carrito:[...this.state.carrito,producto],
-        total:this.state.total+producto.precio
-      })
+    this.setState({
+      carrito:[...this.state.carrito,producto],
+      total:this.state.total+producto.precio
+    })
 
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Producto agregado',
-        showConfirmButton: false,
-        timer: 1500
-      })
-      
-  }
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Producto agregado',
+      showConfirmButton: false,
+      timer: 1500
+    })
+    
+}
  
   eliminar=(p,index)=>{
      
